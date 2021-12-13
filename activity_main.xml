@@ -1,65 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/Edit1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="숫자1" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/main_background" />
 
-    <EditText
-        android:id="@+id/Edit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="숫자2" />
 
-    <Button
-        android:id="@+id/BtnAdd"
+    <LinearLayout
+        android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="더하기" />
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/ballView1"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/ballView2"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/ballView3"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/ballView4"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/ballView5"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/ballView6"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_margin="30px"
+            android:gravity="center" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/BtnSub"
+        android:id="@+id/btStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="빼기" />
+        android:backgroundTint="#FFEB3B"
+        android:gravity="center"
+        android:text="뽑기"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/BtnMul"
+        android:id="@+id/btnSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="곱하기" />
+        android:backgroundTint="#F44336"
+        android:text="당첨번호 조회"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/BtnDiv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="나누기" />
+        android:backgroundTint="#00BCD4"
+        android:onClick="startBarcodeReader"
+        android:text="QR코드리더"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/BtnRem"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="나머지 값" />
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp">
 
-    <TextView
-        android:id="@+id/TextResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="계산 결과 : "
-        android:textColor="#FF0000"
-        android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CDDC39"
+            android:text="노래 켜기" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5C6BC0"
+            android:text="노래 끄기" />
+    </LinearLayout>
+
 
 </LinearLayout>
+
+
